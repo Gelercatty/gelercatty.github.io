@@ -10,7 +10,14 @@
     <div id="app">
       <n-button>{{ message }}</n-button>
     </div>
+
+    <n-config-provider :theme-overrides="{ common: { fontWeightStrong: '600' } }">
+      <app />
+    </n-config-provider>
+
     <script>
+      import 'vfonts/Lato.css'
+      import 'vfonts/FiraCode.css'
       const App = {
         setup() {
           return {
