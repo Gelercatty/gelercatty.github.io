@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 left-0 w-full flex justify-center mt-4">
+  <div class="fixed top-0 left-0 w-full flex justify-center mt-4 z-50">
     <div class=" inline-flex bg-base-100 backdrop-filter backdrop-blur-lg bg-opacity-50 rounded-lg shadow-lg px-4 py-2">
       <div class="flex-1">
         <a class="btn btn-ghost text-xl" href="#home">Home</a>
@@ -15,7 +15,7 @@
         <a class="btn btn-ghost text-xl" href="#other">Other</a>
       </div>
       <div class="flex-1">
-        <a class="btn btn-ghost text-xl" href="./assets/resume.pdf">Resume</a>
+        <a class="btn btn-ghost text-xl" href="/src/assets/resume.pdf">Resume</a>
       </div>
       <!-- 主题切换 -->
       <label class="swap swap-rotate">
@@ -37,111 +37,284 @@
     </div>
   </div>
   <div id="home" class="block h-16"></div>
-  <div class="container mx-auto p-4 bg-base-100 shadow-md rounded-lg my-8  max-w-2xl">
+  <div class="container mx-auto p-4 bg-base-100 shadow-xl rounded-lg my-8  max-w-4xl">
 
-      <article class="prose max-w-none">
-        <h2>🙌<span class="text-gray-300">Hi there!</span> I'm 马砚文(Yanwen Ma) </h2>
-        <p>I am a third-year undergraduate student at the School of Sports Engineering(SSE), Beijing Sport
-          University.expected to graduate in 2025. I am likely to be recommended for postgraduate exemption.</p>
-        <p>I am currently looking for master's opportunities; <span class="font-bold">PLZ</span> check out my <a href="./assets/resume.pdf" class="link link-primary">Resume</a> here.</p>
-        <h3>Interests</h3>
-        <p class="flex flex-wrap px-4 gap-x-2 gap-y-2 items-end">
-          <button class="btn btn-sm btn-error mb-2">Multy-LLM</button>
-          <button class="btn btn-xs btn-warning mb-2">Game Dev</button>
-          <button class="btn btn-sm btn-info mb-2">Agents in Games</button>
+    <article class="prose max-w-none">
+      <h1 class="hover-grow-hover">🙌<span class="text-gray-300 ">Hi there!</span> I'm 马砚文(Yanwen Ma) </h1>
+      <p>I am a third-year undergraduate student at the School of Sports Engineering(SSE), Beijing Sports University. Expected to graduate in 2025. I am likely to be recommended for postgraduate exemption.</p>
+      <p>I am currently looking for master's opportunities; <span class="font-bold">PLZ</span> check out my <a
+          href="/src/assets/resume.pdf" class="link link-primary ">Resume</a> here.</p>
+      <h2>Interests</h2>
+      <p class="flex flex-wrap px-4 gap-x-2 gap-y-2 items-end">
+        <button class="btn btn-sm btn-error mb-2">Multy-LLM</button>
+        <button class="btn btn-xs btn-warning mb-2">Game Dev</button>
+        <button class="btn btn-sm btn-info mb-2">Agents in Games</button>
 
-          <button class="btn btn-xs btn-success mb-2">3D AIGC</button>
-          <button class="btn btn-xs btn-warning mb-2">Computer graphics</button>
-        </p>
+        <button class="btn btn-xs btn-success mb-2">3D AIGC</button>
+        <button class="btn btn-xs btn-warning mb-2">Computer graphics</button>
+      </p>
 
-      </article>
+    </article>
 
   </div>
-  <div class="container mx-auto p-4 bg-base-100 shadow-md rounded-lg my-8 max-w-2xl">
+  <div class="container mx-auto p-4 bg-base-100 shadow-xl rounded-lg my-8 max-w-4xl">
 
     <div id="work">
       <!-- detail -->
       <article class="prose max-w-full  break-words">
-        <h1>work</h1>
-        <p>balabbdadaldbadabadladballdbaldbabadlabdlab
-          adbladbalbdaldblabdalbdaldbabdladbladbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbadbladblwaldskldawbdladbkslakldwbkaldbklsadwkabldsakldwbabdalblakbdwlabdkslabwklabkdsladbalwbdladbksladbwlkbdkalbsldaldwba
-        </p>
+        <h1>Work</h1>
+        <div class="card lg:card-side card-compact bg-base-100 shadow-xl">
+          <figure><img src="./assets/avatarsoul.png" alt="AvatarSoul" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">AvatarSoul</h2>
+            <p>Fully LLM-driven avatars</p>
+            <p>📣This work has advanced to the finals of 4CBJ2024.🎉</p>
+            <div class="card-actions justify-end">
+              <a href="https://github.com/Gelercatty/AvatarSoul" target="_blank">
+                <button class="btn btn-primary">Code</button>
+              </a>
+              <a href="https://www.bilibili.com/video/BV1gr42177QF" target="_blank">
+                <button class="btn btn-primary">Video Demo</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card lg:card-side card-compact bg-base-100 shadow-xl">
+          <figure><img src="./assets/taichi.png" alt="AvatarSoul" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">TaiChiGPT</h2>
+            <p>Complex Sports Action Generation Based on Large Language Models</p>
+            <p> Jianwei Li<sup>1</sup>, Kehao Ran<sup>1</sup>, <strong>Yanwen Ma<sup>1</sup></strong>, Hongwen
+              Xie<sup>2</sup>.</p>
+            <p>👨‍🔬👩‍🔬This work has been submitted to the International Journal of Computer Vision (IJCV) 2024.</p>
+            <div class="card-actions justify-end">
+              <a href="https://bsu3dvlab.github.io/TaiChi24/index.html">
+                <button class="btn btn-primary">Dataset</button>
+              </a>
+              <a href="https://youtu.be/u2j5-0emYc8?si=z5eQruwtmQyQmW9i" target="_blank" class="tooltip  tooltip-accent" data-tip="may need Vpn">
+                <button class="btn btn-primary ">Video Demo</button>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side card-compact bg-base-100 shadow-xl">
+          <figure><img src="./assets/eyesnow.png" alt="AvatarSoul" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">EyeSnow</h2>
+            <p>A snowfield tracking and shooting system based on YOLO and gimbal control algorithms.</p>
+
+            <ul class="list-none pl-0">
+              <li>💪Beijing Sport University Innovation Training Project, funding of 3k.</li>
+              <li>🏆4CBJ2023 National Third Prize</li>
+              <li>🏆202e China College Students’ 'Internet+' Innovation and Entrepreneurship Competition, Beijing
+                Competition Area Third Prize</li>
+              <li>🎉Finalist in the China Sports Equipment Intelligent Manufacturing Competition</li>
+            </ul>
+            <div class="card-actions justify-end">
+              <a href="https://github.com/Gelercatty/SnowEye" target="_blank">
+              <button class="btn btn-primary">Code</button>
+              </a>
+            </div>
+          </div>
+        </div>
       </article>
     </div>
   </div>
-  <div class="container mx-auto p-4 bg-base-100 shadow-md rounded-lg my-8 max-w-2xl">
 
-    <div id="gallery" class="prose max-w-full  break-words">
-      <h1>gallery</h1>
-      <p>
-        balabbdadaldbadabadladballdbaldbabadlabd labadbladbalbdaldblabdalbdaldbabdladbladbb
-        bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbadbladblwaldskldawbdl adbkslakldwbkaldbklsadwkabldsakldwbabdalblakbdwlabdksl
-        abwklabkdsladbalwbdladbksladbwlkbdkalbsldaldwba
-      </p>
-    </div>
-  </div>
 
-  <div class="container mx-auto p-4 bg-base-100 shadow-md rounded-lg my-8 max-w-2xl">
+  <div class="container mx-auto p-4 bg-base-100 shadow-xl rounded-lg my-8 max-w-4xl">
 
     <div id="other" class="prose max-w-none">
-      <h1>Other</h1>
-      <p>
-        balabbdadaldbadabadladballdbald babadlabdlabadbladbalbdaldblab
-        dalbdaldbabdladbladbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbadbladblwaldskld awbdladbkslakldwbkaldbklsadwkabldsakldwba
-        bdalblakbdwlabdkslabwklabkdsladbalwbdladbksladbwlkbdka lbsldaldwba
-      </p>
+
+      <div>
+        <h1>🥇Selected Honors</h1>
+
+        <article class="prose max-w-none">
+          <div class="flex justify-between items-center py-1 hover-grow-hover">
+            <span>CUMCU Beijing area First Prize</span>
+            <span class="flex-grow border-t border-dotted border-gray-400 mx-2"></span>
+            <span>2023</span>
+          </div>
+          <div class="flex justify-between items-center py-1 hover-grow-hover">
+            <span>Computer Design Competition National Third Prize</span>
+            <span class="flex-grow border-t border-dotted border-gray-400 mx-2"></span>
+            <span>2023</span>
+          </div>
+          <div class="flex justify-between items-center py-1 hover-grow-hover">
+            <span>Undergraduate First-Class Scholarship</span>
+            <span class="flex-grow border-t border-dotted border-gray-400 mx-2"></span>
+            <span>2023</span>
+          </div>
+          <div class="flex justify-between items-center py-1 hover-grow-hover">
+            <span>Beijing Sport University Outstanding Student</span>
+            <span class="flex-grow border-t border-dotted border-gray-400 mx-2"></span>
+            <span>2024</span>
+          </div>
+          <div class="flex justify-between items-center py-1 hover-grow-hover">
+            <span>优秀共青团员</span>
+            <span class="flex-grow border-t border-dotted border-gray-400 mx-2"></span>
+            <span>2024</span>
+          </div>
+
+          <p></p>
+
+          <h1>🎓Experience</h1>
+          <div class="flex justify-between items-center py-1 hover-grow-hover">
+            <span>Publicity Minister of SSE Student Union</span>
+            <span class="flex-grow border-t border-dotted border-gray-400 mx-2"></span>
+            <span>2022.3 - 2023.6</span>
+          </div>
+          <div class="flex justify-between items-center py-1 hover-grow-hover">
+            <span>President of BSU Guitar Club</span>
+            <span class="flex-grow border-t border-dotted border-gray-400 mx-2 "></span>
+            <span>2022.9 - present</span>
+          </div>
+        </article>
+      </div>
     </div>
   </div>
+
+  <div class="container mx-auto p-4 bg-base-100 shadow-xl rounded-lg my-8 max-w-4xl">
+    <div id="gallery" class="prose max-w-none">
+      <h1>Gallery</h1>
+
+      <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-200">
+        <input type="checkbox" />
+        <div class="collapse-title text-xl font-medium">
+          My art works, my band, and my CAT... 😼
+        </div>
+        <div class="collapse-content">
+
+
+          <div class="columns-1 sm:columns-2 lg:columns-3 gap-4">
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click='openModal("/assets/gallery/1.png")' src="./assets/gallery/1.png" alt="Gallery Image 1"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click="openModal('/assets/gallery/2.png')" src="./assets/gallery/2.png" alt="Gallery Image 2"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click="openModal('/assets/gallery/3.png')" src="./assets/gallery/3.png" alt="Gallery Image 3"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click="openModal('/assets/gallery/4.png')" src="./assets/gallery/4.png" alt="Gallery Image 4"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click="openModal('/assets/gallery/5.png')" src="./assets/gallery/5.png" alt="Gallery Image 5"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click="openModal('/assets/gallery/6.png')" src="./assets/gallery/6.png" alt="Gallery Image 6"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click="openModal('/assets/gallery/7.png')" src="./assets/gallery/7.png" alt="Gallery Image 7"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click="openModal('/assets/gallery/8.png')" src="./assets/gallery/8.png" alt="Gallery Image 8"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click="openModal('/assets/gallery/9.png')" src="./assets/gallery/9.png" alt="Gallery Image 9"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+            <!-- <div class="mb-4 break-inside-avoid-column">
+          <img @click="openModal('/assets/gallery/10.png')" src="./assets/gallery/10.png" alt="Gallery Image 10"
+            class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+        </div> -->
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click="openModal('/assets/gallery/11.png')" src="./assets/gallery/11.png" alt="Gallery Image 11"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+            <div class="mb-4 break-inside-avoid-column">
+              <img @click="openModal('/assets/gallery/12.png')" src="./assets/gallery/12.png" alt="Gallery Image 12"
+                class="w-full h-auto rounded-lg shadow-md cursor-pointer">
+            </div>
+
+            <!-- 添加更多图片 -->
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+
+
 
   <footer class="footer footer-center p-10 bg-primary text-primary-content">
     <aside>
-      <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-        clip-rule="evenodd" class="inline-block fill-current">
-        <path
-          d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
-        </path>
-      </svg>
-      <p class="font-bold">
-        ACME Industries Ltd. <br>Providing reliable tech since 1992
-      </p>
-      <p>Copyright © 2024 - All right reserved</p>
-    </aside>
-    <nav>
-      <div class="grid grid-flow-col gap-4">
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-            <path
-              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
-            </path>
-          </svg></a>
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-            <path
-              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
-            </path>
-          </svg></a>
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-            <path
-              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
-            </path>
-          </svg></a>
+
+
+      <div class="avatar">
+        <div class="w-24 rounded-full">
+          <img src="/src/assets/avatar.png" />
+        </div>
       </div>
-    </nav>
+
+      <p class="font-bold">
+        GelerCAT =w= <br>Code, Love, and Create
+      </p>
+      <p>Email : Gelercat@bsu.edu.cn</p>
+      <p>H: 130 2762 7852 </p>
+    </aside>
+
   </footer>
 
 
+
+
+  <!-- Modal -->
+  <div v-if="modalVisible" class="modal modal-open flex justify-center items-center">
+    <div class="modal-box relative max-w-3xl">
+      <button @click="closeModal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+      <img :src="'/src' + modalImage" :alt="modalImage" class="w-full h-auto rounded-lg shadow-md">
+    </div>
+  </div>
 
 </template>
 
 
 <script>
 import { ref, watch, onMounted } from 'vue';
-
 export default {
   setup() {
     const theme = ref('light');  // 默认主题为 'light'
+    const modalVisible = ref(false);
+    const modalImage = ref("");
 
     function toggleTheme(event) {
       theme.value = event.target.checked ? 'dark' : 'light';
     }
+
+    function openModal(image) {
+      modalImage.value = image;
+      modalVisible.value = true;
+    }
+    function closeModal() {
+      modalVisible.value = false;
+      modalImage.value = '';
+    }
+
+
+
+
+
+
 
     watch(theme, (newTheme) => {
       document.documentElement.setAttribute('data-theme', newTheme);
@@ -151,7 +324,49 @@ export default {
       document.documentElement.setAttribute('data-theme', theme.value);
     });
 
-    return { toggleTheme };
+
+
+
+
+
+    return {
+      toggleTheme,
+      modalVisible,
+      modalImage,
+      openModal,
+      closeModal,
+    };
   }
 }
 </script>
+
+
+<style>
+/* 确保图片容器在列内不被断开 */
+.break-inside-avoid-column {
+  break-inside: avoid;
+}
+
+/* DaisyUI Modal Styles */
+.modal.modal-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+
+/* 自定义悬停动画 */
+.hover-grow-hover {
+  transition: transform 0.15s ease-in-out;
+}
+
+.hover-grow-hover:hover {
+  transform: scale(1.005) translateY(-5px);
+}
+</style>
