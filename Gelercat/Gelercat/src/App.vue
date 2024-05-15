@@ -15,7 +15,7 @@
         <a class="btn btn-ghost text-xl" href="#other">Other</a>
       </div>
       <div class="flex-1">
-        <a class="btn btn-ghost text-xl" href="/src/assets/resume.pdf">Resume</a>
+        <a class="btn btn-ghost text-xl" href="./assets/resume.pdf">Resume</a>
       </div>
       <!-- 主题切换 -->
       <label class="swap swap-rotate">
