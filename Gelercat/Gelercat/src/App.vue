@@ -190,39 +190,39 @@
 
           <div class="columns-1 sm:columns-2 lg:columns-3 gap-4">
             <div class="mb-4 break-inside-avoid-column">
-              <img @click='openModal("/assets/gallery/1.png")' src="./assets/gallery/1.png" alt="Gallery Image 1"
+              <img @click='openModal("./assets/gallery/1.png")' src="./assets/gallery/1.png" alt="Gallery Image 1"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
             <div class="mb-4 break-inside-avoid-column">
-              <img @click="openModal('/assets/gallery/2.png')" src="./assets/gallery/2.png" alt="Gallery Image 2"
+              <img @click="openModal('./assets/gallery/2.png')" src="./assets/gallery/2.png" alt="Gallery Image 2"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
             <div class="mb-4 break-inside-avoid-column">
-              <img @click="openModal('/assets/gallery/3.png')" src="./assets/gallery/3.png" alt="Gallery Image 3"
+              <img @click="openModal('./assets/gallery/3.png')" src="./assets/gallery/3.png" alt="Gallery Image 3"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
             <div class="mb-4 break-inside-avoid-column">
-              <img @click="openModal('/assets/gallery/4.png')" src="./assets/gallery/4.png" alt="Gallery Image 4"
+              <img @click="openModal('./assets/gallery/4.png')" src="./assets/gallery/4.png" alt="Gallery Image 4"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
             <div class="mb-4 break-inside-avoid-column">
-              <img @click="openModal('/assets/gallery/5.png')" src="./assets/gallery/5.png" alt="Gallery Image 5"
+              <img @click="openModal('./assets/gallery/5.png')" src="./assets/gallery/5.png" alt="Gallery Image 5"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
             <div class="mb-4 break-inside-avoid-column">
-              <img @click="openModal('/assets/gallery/6.png')" src="./assets/gallery/6.png" alt="Gallery Image 6"
+              <img @click="openModal('./assets/gallery/6.png')" src="./assets/gallery/6.png" alt="Gallery Image 6"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
             <div class="mb-4 break-inside-avoid-column">
-              <img @click="openModal('/assets/gallery/7.png')" src="./assets/gallery/7.png" alt="Gallery Image 7"
+              <img @click="openModal('./assets/gallery/7.png')" src="./assets/gallery/7.png" alt="Gallery Image 7"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
             <div class="mb-4 break-inside-avoid-column">
-              <img @click="openModal('/assets/gallery/8.png')" src="./assets/gallery/8.png" alt="Gallery Image 8"
+              <img @click="openModal('./assets/gallery/8.png')" src="./assets/gallery/8.png" alt="Gallery Image 8"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
             <div class="mb-4 break-inside-avoid-column">
-              <img @click="openModal('/assets/gallery/9.png')" src="./assets/gallery/9.png" alt="Gallery Image 9"
+              <img @click="openModal('./assets/gallery/9.png')" src="./assets/gallery/9.png" alt="Gallery Image 9"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
             <!-- <div class="mb-4 break-inside-avoid-column">
@@ -230,11 +230,11 @@
             class="w-full h-auto rounded-lg shadow-md cursor-pointer">
         </div> -->
             <div class="mb-4 break-inside-avoid-column">
-              <img @click="openModal('/assets/gallery/11.png')" src="./assets/gallery/11.png" alt="Gallery Image 11"
+              <img @click="openModal('./assets/gallery/11.png')" src="./assets/gallery/11.png" alt="Gallery Image 11"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
             <div class="mb-4 break-inside-avoid-column">
-              <img @click="openModal('/assets/gallery/12.png')" src="./assets/gallery/12.png" alt="Gallery Image 12"
+              <img @click="openModal('./assets/gallery/12.png')" src="./assets/gallery/12.png" alt="Gallery Image 12"
                 class="w-full h-auto rounded-lg shadow-md cursor-pointer">
             </div>
 
@@ -282,7 +282,7 @@
   <div v-if="modalVisible" class="modal modal-open flex justify-center items-center">
     <div class="modal-box relative max-w-3xl">
       <button @click="closeModal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
-      <img :src="'/src' + modalImage" :alt="modalImage" class="w-full h-auto rounded-lg shadow-md">
+      <img :src="modalImage" :alt="modalImage" class="w-full h-auto rounded-lg shadow-md">
     </div>
   </div>
 
