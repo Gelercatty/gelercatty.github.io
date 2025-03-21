@@ -41,9 +41,10 @@
 
     <article class="prose max-w-none">
       <h1 class="hover-grow-hover">🙌<span class="text-gray-300 ">Hi there!</span> I'm 马砚文(Yanwen Ma) </h1>
-      <p>I am a third-year undergraduate student at the School of Sports Engineering(SSE), Beijing Sports University. Expected to graduate in 2025. I am likely to be recommended for postgraduate exemption.</p>
-      <p>I am currently looking for master's opportunities; <span class="font-bold">PLZ</span> check out my <a
-          href="/src/assets/resume.pdf" class="link link-primary ">Resume</a> here.</p>
+      <p>I am a fourth-year undergraduate student at the School of Sports Engineering (SSE), Beijing Sport University, expected to graduate in 2025. Recently, I have received a master's offer from Beihang University, where I will pursue my graduate studies in Computer Science, with a research focus on 3D Computer Vision.</p>
+      <p>I'm currently seeking an internship opportunity related to 3D Computer Vision, computer graphics, or related fields. I'm excited to apply my skills and continue growing in a dynamic research or development environment. </p>
+      <!-- <span class="font-bold">PLZ</span> check out my <a
+          href="/src/assets/resume.pdf" class="link link-primary ">Resume</a> here. -->
       <h2>Interests</h2>
       <p class="flex flex-wrap px-4 gap-x-2 gap-y-2 items-end">
         <button class="btn btn-sm btn-error mb-2">Multy-LLM</button>
