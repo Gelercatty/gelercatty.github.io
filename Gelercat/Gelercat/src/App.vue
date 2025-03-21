@@ -88,7 +88,7 @@
             <p>Complex Sports Action Generation Based on Large Language Models</p>
             <p> Jianwei Li<sup>1</sup>, Kehao Ran<sup>1</sup>, <strong>Yanwen Ma<sup>1</sup></strong>, Hongwen
               Xie<sup>2</sup>.</p>
-            <p>👨‍🔬👩‍🔬This work has been submitted to the International Journal of Computer Vision (IJCV) 2024.</p>
+            <p>👨‍🔬👩‍🔬This work has been submitted to the IEEE 2025.</p>
             <div class="card-actions justify-end">
               <a href="https://bsu3dvlab.github.io/TaiChi24/index.html">
                 <button class="btn btn-primary">Dataset</button>
